@@ -1167,11 +1167,11 @@ if __name__ == "__main__":
             print(f"✅ {package} 安装完成")
 
     # 请根据实际路径修改
-    pdf_path = "/data1/shx/loc_vg/word.pdf"  # 你的PDF文件路径
-    output_dir = "/data1/shx/loc_vg/pdf_dataset_enhanced"  # 输出目录
+    pdf_path = "./word.pdf"  # 你的PDF文件路径
+    output_dir = "./pdf_dataset_enhanced"  # 输出目录
 
     # 初始化生成器（目标样本数，768x768分辨率）
-    mask_dir = "/data1/shx/loc3/1104Vs/mask"
+    mask_dir = "./mask"
 
     generator = PDFDatasetGenerator(
         pdf_path=pdf_path,
